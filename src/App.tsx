@@ -163,7 +163,7 @@ function App() {
                   </div>
 
                   <div className="post__caption">
-                    <strong>{post.text}</strong>
+                    <strong>Image upload</strong>
                     <span>{date}</span>
                   </div>
                 </div>
@@ -216,28 +216,30 @@ function App() {
           </div>
         </header>
 
-        <div className="toolbar" aria-label="View mode">
-          <button
-            className={viewMode === 'tiles' ? 'active' : ''}
-            type="button"
-            onClick={() => setViewMode('tiles')}
-            aria-label="Tiles"
-            aria-pressed={viewMode === 'tiles'}
-          >
-            <span className="icon-grid" />
-          </button>
-          <button
-            className={viewMode === 'rows' ? 'active' : ''}
-            type="button"
-            onClick={() => setViewMode('rows')}
-            aria-label="Rows"
-            aria-pressed={viewMode === 'rows'}
-          >
-            <span className="icon-list" />
-          </button>
+        <div className="feed-container">
+          <div className="toolbar" aria-label="View mode">
+            <button
+              className={viewMode === 'tiles' ? 'active' : ''}
+              type="button"
+              onClick={() => setViewMode('tiles')}
+              aria-label="Tiles"
+              aria-pressed={viewMode === 'tiles'}
+            >
+              <span className="icon-grid" />
+            </button>
+            <button
+              className={viewMode === 'rows' ? 'active' : ''}
+              type="button"
+              onClick={() => setViewMode('rows')}
+              aria-label="Rows"
+              aria-pressed={viewMode === 'rows'}
+            >
+              <span className="icon-list" />
+            </button>
+          </div>
+          
+          {content}
         </div>
-
-        {content}
       </section>
     </main>
   )
