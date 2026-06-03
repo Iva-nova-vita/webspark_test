@@ -222,7 +222,7 @@ h1 {
 }
 
 .feed--tiles .post__info {
-  padding-top: 12px;
+  padding: 12px 12px 18px;
 }
 
 .post__meta-row {
@@ -233,7 +233,7 @@ h1 {
 
 .feed--tiles .post__meta-row {
   justify-content: space-between;
-  gap: 12px;
+  gap: 4px;
 }
 
 .post__stat-block {
@@ -265,7 +265,7 @@ h1 {
 
 .post__meta-row strong,
 .post__caption strong {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .post__metrics {
@@ -276,12 +276,15 @@ h1 {
 
 .feed--tiles .post__metrics {
   gap: 8px;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 24px;
 }
 
 .metric {
   display: inline-flex;
   align-items: center;
-  gap: 3px;
+  gap: 6px;
   color: #111111;
   font-size: 5px;
   font-weight: 700;
@@ -302,7 +305,19 @@ h1 {
 }
 
 .feed--tiles .post__caption {
-  margin-top: 8px;
+  margin-left: 0;
+  font-size: 12px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.feed--tiles .post__caption strong {
+  font-size: 14px;
+}
+
+.feed--tiles .post__caption span {
+  font-size: 12px;
 }
 
 .feed--rows .post__caption {
