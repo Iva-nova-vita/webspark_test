@@ -3,6 +3,7 @@ import { FiHeart, FiMessageSquare } from 'react-icons/fi'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import bgVectorTop from './assets/images/bg_vector_top.svg'
+import bgVectorBottom from './assets/images/bg_vector_bottom.svg'
 import logo from './assets/images/logo.svg'
 import './App.css'
 
@@ -197,6 +198,7 @@ function App() {
     <main className="mockup-page">
       <section className="project-board" aria-label="monblanproject posts">
         <img className="shape shape--top" src={bgVectorTop} alt="" aria-hidden="true" />
+        <img className="shape shape--bottom" src={bgVectorBottom} alt="" aria-hidden="true" />
         <img className="brand-mark" src={logo} alt="Monblan logo" aria-hidden="true" />
 
         <header className="project-header">
