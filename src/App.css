@@ -363,6 +363,10 @@ h1 {
   display: grid;
   grid-template-columns: 10% 1fr;
   align-items: center;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 14% 1fr;
+  }
 }
 
 .post__image {
@@ -377,6 +381,10 @@ h1 {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   padding-left: 30px;
+
+  @media (max-width: 440px) {
+    padding-left: 20px;
+  }
 }
 
 .feed--tiles .post__info {
@@ -387,6 +395,10 @@ h1 {
   display: flex;
   gap: 18px;
   align-items: flex-start;
+
+  @media (max-width: 440px) {
+    gap: 8px;
+  }
 }
 
 .feed--tiles .post__meta-row {
@@ -419,6 +431,14 @@ h1 {
   line-height: 1;
   text-overflow: ellipsis;
   white-space: nowrap;
+
+    @media (max-width: 640px) {
+      font-size: 13px;
+    }
+
+    @media (max-width: 440px) {
+      font-size: 12px;
+    }
 }
 
 .post__meta-row strong,
@@ -430,6 +450,10 @@ h1 {
   display: flex;
   gap: 18px;
   align-items: center;
+
+  @media (max-width: 440px) {
+    gap: 8px;
+  }
 }
 
 .feed--tiles .post__metrics {
@@ -455,6 +479,11 @@ h1 {
   height: 16px;
   flex: 0 0 auto;
   fill: currentColor;
+
+  @media (max-width: 440px) {
+    width: 12px;
+    height: 12px;
+  }
 }
 .post__caption {
   display: grid;
