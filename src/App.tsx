@@ -226,7 +226,7 @@ function App() {
               <DatePicker
                 selected={dateFrom}
                 onChange={(date: Date | null) => setDateFrom(date)}
-                placeholderText="From"
+                placeholderText="from"
                 isClearable
                 showIcon
                 icon={<CalendarPickerIcon />}
@@ -237,7 +237,7 @@ function App() {
               <DatePicker
                 selected={dateTo}
                 onChange={(date: Date | null) => setDateTo(date)}
-                placeholderText="To"
+                placeholderText="to"
                 isClearable
                 showIcon
                 icon={<CalendarPickerIcon />}
