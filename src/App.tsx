@@ -232,7 +232,7 @@ function App() {
                 icon={<CalendarPickerIcon />}
                 dateFormat="dd_MM_yyyy"
                 showPopperArrow={false}
-                popperProps={{ strategy: 'fixed' }}
+                popperPlacement="bottom-start"
               />
               <DatePicker
                 selected={dateTo}
@@ -243,7 +243,7 @@ function App() {
                 icon={<CalendarPickerIcon />}
                 dateFormat="dd_MM_yyyy"
                 showPopperArrow={false}
-                popperProps={{ strategy: 'fixed' }}
+                popperPlacement="bottom-start"
               />
             </form>
           </div>

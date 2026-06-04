@@ -102,7 +102,6 @@ h1 {
 .date-filter {
   display: flex;
   align-items: center;
-  gap: 4px;
   color: #111111;
   font-size: 6px;
 }
