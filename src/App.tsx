@@ -4,7 +4,8 @@ import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import bgVectorTop from './assets/images/bg_vector_top.svg'
 import bgVectorBottom from './assets/images/bg_vector_bottom.svg'
-import logo from './assets/images/logo.svg'
+import logo from './assets/images/logo.svg' 
+import placeholderImage from './assets/images/Placeholder.png' 
 import './App.css'
 
 type ViewMode = 'rows' | 'tiles'
@@ -153,7 +154,7 @@ function App() {
                   src={post.image}
                   alt={post.text}
                   onError={(event) => {
-                    event.currentTarget.src = post.owner.picture
+                    event.currentTarget.src = placeholderImage
                   }}
                 />
 
