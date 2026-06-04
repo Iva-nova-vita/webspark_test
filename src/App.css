@@ -111,14 +111,85 @@ h1 {
   font-size: 16px;
 }
 
-.date-filter input {
-  width: 162px;
-  height: 28px;
+.date-filter .react-datepicker-wrapper {
   margin: 0 8px;
-  border: 1px solid #d4d4d4;
-  padding: 0 3px;
+}
+
+.date-filter .react-datepicker__input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.date-filter .react-datepicker__input-container input {
+  width: 162px;
+  height: 24px;
+  border: 1px solid rgba(222, 222, 222, 1);
+  border-radius: 4px;
+  padding: 0 48px 0 6px;
   color: rgba(99, 98, 100, 1);
   font-size: 13px;
+}
+
+.date-filter .react-datepicker__input-container input:focus {
+  outline: none;
+}
+
+.date-filter .react-datepicker__input-container input::placeholder {
+  color: rgba(99, 98, 100, 0.6);
+}
+
+.react-datepicker__input-container.react-datepicker__view-calendar-icon svg {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  display: block;
+  padding: 0;
+  pointer-events: none;
+  background-color: rgba(235, 235, 235, 1);
+  border: 1px solid rgba(222, 222, 222, 1);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.date-filter .react-datepicker__input-container.react-datepicker__view-calendar-icon input {
+  padding-left: 6px;
+  padding-right: 48px;
+}
+
+.date-filter .react-datepicker__close-icon {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+}
+
+.date-filter .react-datepicker__close-icon::after {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.3137 9.89949L7.07107 5.65685L11.3137 1.41421L9.8995 -4.64916e-06L5.65686 4.24264L1.41422 -4.64916e-06L6.19888e-06 1.41421L4.24265 5.65685L6.19888e-06 9.89949L1.41422 11.3137L5.65686 7.07106L9.8995 11.3137L11.3137 9.89949Z' fill='%235F5F5F'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(235, 235, 235, 1);
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 0;
 }
 
 .feed-container {
@@ -129,7 +200,6 @@ h1 {
 
 .toolbar {
   position: relative;
-  z-index: 1;
   display: flex;
   justify-content: flex-end;
   gap: 22px;
@@ -180,7 +250,6 @@ h1 {
 
 .feed {
   position: relative;
-  z-index: 1;
   width: 100%;
   max-width: 836px;
   margin: 0 auto;
